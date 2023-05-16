@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { CountService } from 'src/count.service';
-import { UserService } from 'src/user.service';
+import { CountService } from 'src/app/services/count.service';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-root',
