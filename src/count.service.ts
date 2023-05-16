@@ -4,10 +4,10 @@ export class CountService {
 
     countActToInac() {
         this.activeToInactive++;
-        console.log('Active to inactive: ' + this.activeToInactive)
+        console.log('Active to inactive: ' + this.activeToInactive);
     }
     countInactToAct() {
-        this.activeToInactive++;
-        console.log('AInactive to active: ' + this.InactiveToActive)
+        this.InactiveToActive++;
+        console.log('Inactive to active: ' + this.InactiveToActive);
     }
 }
