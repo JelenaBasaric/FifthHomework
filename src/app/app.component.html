@@ -1,8 +1,16 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-md-8 col-md-offset-2">
-      <app-all-users ></app-all-users>
-     <!-- // <app-all-users [inactiveUsers]="inactiveUsers"></app-all-users> -->
+      <app-all-users [title]="'Active Users'"
+      [text]="'Set to inactive'"
+      [users]="activeUsers"
+      [callbackFunc]="'userService.onSetToInactive()'"
+></app-all-users>
+<app-all-users [title]="'Inactive Users'"
+      [text]="'Set to active'"
+      [users]="inactiveUsers"
+      [callbackFunc]="'userService.onSetToActive()'"
+></app-all-users>
 
      <!--  <app-active-users
         [users]="activeUsers"></app-active-users>

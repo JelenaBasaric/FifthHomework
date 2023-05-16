@@ -1,16 +1,16 @@
-<h3>Active Users</h3>
+<h3>{{title}}</h3>
 <ul class="list-group">
   <li
     class="list-group-item"
-    *ngFor="let auser of activeUsers; let i = index">
-    {{ auser }} | <a href="#" (click)="onSetToInactive(i)">Set to Inactive</a>
+    *ngFor="let user of users let i = index">
+    {{ user }} | <a href="#" (click)="'callbackFunc'">Set to Inactive</a>
   </li>
 </ul>
-<h3>Inactive Users</h3>
+<!-- <h3>Inactive Users</h3>
 <ul class="list-group">
   <li
     class="list-group-item"
-    *ngFor="let iuser of inactiveUsers; let i = index">
-    {{ iuser }} | <a href="#" (click)="onSetToActive(i)">Set to Active</a>
+    *ngFor="let iuser of users; let i = index">
+    {{ user }} | <a href="#" (click)="onSetToActive(i)">Set to Active</a>
   </li>
-</ul>
+</ul> -->
