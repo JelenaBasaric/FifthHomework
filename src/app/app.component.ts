@@ -1,15 +1,17 @@
 import { Component } from '@angular/core';
+import { CountService } from 'src/count.service';
 import { UserService } from 'src/user.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  //providers:[CountService]
 })
 export class AppComponent {
   activeUsers =this.userService.activeUsers;
   inactiveUsers = this.userService.inactiveUsers;
-  
+
  constructor(private userService:UserService){}
 
   onSetToInactive(id: number) {
