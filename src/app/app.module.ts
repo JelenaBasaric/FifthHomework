@@ -8,12 +8,14 @@ import { ActiveUsersComponent } from './active-users/active-users.component';
 import { InactiveUsersComponent } from './inactive-users/inactive-users.component';
 import { UserService } from 'src/app/services/user.service';
 import { CountService } from 'src/app/services/count.service';
+import { AllUsersComponent } from './all-users/all-users.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ActiveUsersComponent,
-    InactiveUsersComponent
+    InactiveUsersComponent,
+    AllUsersComponent
   ],
   imports: [
     BrowserModule,
