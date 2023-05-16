@@ -1,5 +1,6 @@
 import { Component,Input } from '@angular/core';
 import { UserService } from 'src/app/services/user.service';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 @Component({
   selector: 'app-all-users',
@@ -7,18 +8,24 @@ import { UserService } from 'src/app/services/user.service';
   styleUrls: ['./all-users.component.css']
 })
 export class AllUsersComponent {
-  @Input() activeUsers=this.userService.activeUsers;
-  @Input() inactiveUsers=this.userService.inactiveUsers;
+ // @Input() users=this.userService.activeUsers;
+  @Input() Inactiveusers=this.userService.inactiveUsers;
+  @Input() activeUser=this.userService.activeUser;
+  @Input() title!:string;
+  @Input() text!: string;
+   @Input() users: string[]=[]; 
+   @Input() callbackFunc!: string; 
     constructor(private userService:UserService){}
    // @Output() userSetToInactive = new EventEmitter<number>();
-
-    onSetToInactive(id: number) {
-  
+   
+   onSetToInactive(id: number)
+     {  
       this.userService.onSetToInactive(id);
     }
     onSetToActive(id: number) {
       // this.userSetToActive.emit(id);
       this.userService.onSetToActive(id);
      }
-
+     callso
+     //calsome(){function((callbackFunc)=>callbackFunc)};
 }
