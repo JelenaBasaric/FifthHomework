@@ -15,4 +15,5 @@ export class ActiveUsersComponent {
 
     this.userService.onSetToInactive(id);
   }
+
 }

@@ -4,12 +4,12 @@
       <app-all-users [title]="'Active Users'"
       [text]="'Set to inactive'"
       [users]="activeUsers"
-      [callbackFunc]="'userService.onSetToInactive()'"
+      [callbackFunc]="'userService.onSetToInactive(id)'"
 ></app-all-users>
 <app-all-users [title]="'Inactive Users'"
       [text]="'Set to active'"
       [users]="inactiveUsers"
-      [callbackFunc]="'userService.onSetToActive()'"
+      [callbackFunc]="'userService.onSetToActive(id)'"
 ></app-all-users>
 
      <!--  <app-active-users

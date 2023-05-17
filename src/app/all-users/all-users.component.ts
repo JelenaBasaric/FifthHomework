@@ -1,6 +1,7 @@
 import { Component,Input } from '@angular/core';
 import { UserService } from 'src/app/services/user.service';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { bindCallback } from 'rxjs';
 
 @Component({
   selector: 'app-all-users',
@@ -26,6 +27,11 @@ export class AllUsersComponent {
       // this.userSetToActive.emit(id);
       this.userService.onSetToActive(id);
      }
-     callso
-     //calsome(){function((callbackFunc)=>callbackFunc)};
-}
+     callbackFuncRunIt=function(){
+      //callbackFunk;
+     };
+  
+  var runIt(function (){
+  => callbackFuncRunIt();)
+ }
+    }
