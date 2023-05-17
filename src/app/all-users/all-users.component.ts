@@ -31,7 +31,7 @@ export class AllUsersComponent {
       //callbackFunk;
      };
   
-  var runIt(function (){
-  => callbackFuncRunIt();)
- }
+//   var runIt(function (){
+//   => callbackFuncRunIt();)
+//  }
     }
